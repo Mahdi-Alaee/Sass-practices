@@ -1,13 +1,5 @@
-$greenColor: #22ff22;
-
-@mixin box($color, $radius, $bgColor) {
-  background-color: $bgColor;
-  border-radius: $radius;
-  color: $color;
-  text-align: center;
-  font-size: 2rem;
-  padding: 1rem;
-}
+@import 'variables';
+@import 'mixins';
 
 h1 {
   background-color: $greenColor;
