@@ -2,18 +2,22 @@ h1 {
   background-color: #22ff22;
 }
 
-.container {
-  background-color: green;
+h2 {
+  background-color: #22ff22;
+  border-radius: 1rem;
+  color: red;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
 }
-.container ul {
-  list-style-type: none;
-  padding: 0;
-}
-.container ul li {
-  padding: 0.5rem;
-}
-.container ul li a {
-  color: #fff;
+
+h3 {
+  background-color: black;
+  border-radius: 2rem;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=app.css.map */
