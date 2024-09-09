@@ -7,8 +7,10 @@ h1 {
 
 h2 {
   @include box(red, 1rem, $greenColor);
+  @include hoverEffect(rgb(243, 243, 62))
 }
 
 h3 {
   @include box(white, 2rem, black);
+  @include hoverEffect(rgb(0, 179, 255))
 }

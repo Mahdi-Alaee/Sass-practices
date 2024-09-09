@@ -6,3 +6,13 @@
     font-size: 2rem;
     padding: 1rem;
   }
+
+  @mixin hoverEffect($bgColor){
+    &:hover{
+      background-color: $bgColor;
+      transition: background-color linear 150ms;
+      color: black;
+      cursor: pointer;
+    }
+
+  }
