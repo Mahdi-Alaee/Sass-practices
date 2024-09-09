@@ -2,4 +2,18 @@ h1 {
   background-color: #22ff22;
 }
 
+.container {
+  background-color: green;
+}
+.container ul {
+  list-style-type: none;
+  padding: 0;
+}
+.container ul li {
+  padding: 0.5rem;
+}
+.container ul li a {
+  color: #fff;
+}
+
 /*# sourceMappingURL=app.css.map */
