@@ -22,3 +22,11 @@ h4.operator-1 {
 h4.operator-2 {
   font-size: 3rem + 2rem;
 }
+
+h4.content{
+  @include query(900px){
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+  }
+  font-size: 3rem;
+}

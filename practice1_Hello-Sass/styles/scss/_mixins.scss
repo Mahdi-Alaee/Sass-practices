@@ -14,5 +14,10 @@
       color: black;
       cursor: pointer;
     }
+  }
 
+  @mixin query($width){
+    @media (max-width: $width) {
+      @content;
+    }
   }

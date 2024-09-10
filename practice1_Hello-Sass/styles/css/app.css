@@ -40,4 +40,14 @@ h4.operator-2 {
   font-size: 5rem;
 }
 
+h4.content {
+  font-size: 3rem;
+}
+@media (max-width: 900px) {
+  h4.content {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: red;
+  }
+}
+
 /*# sourceMappingURL=app.css.map */
