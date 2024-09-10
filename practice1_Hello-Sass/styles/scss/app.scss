@@ -14,3 +14,11 @@ h3 {
   @include box(white, 2rem, black);
   @include hoverEffect(rgb(0, 179, 255))
 }
+
+h4.operator-1 {
+  font-size: $fontSize * 2;
+}
+
+h4.operator-2 {
+  font-size: 3rem + 2rem;
+}

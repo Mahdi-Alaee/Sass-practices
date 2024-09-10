@@ -32,4 +32,12 @@ h3:hover {
   cursor: pointer;
 }
 
+h4.operator-1 {
+  font-size: 4rem;
+}
+
+h4.operator-2 {
+  font-size: 5rem;
+}
+
 /*# sourceMappingURL=app.css.map */
