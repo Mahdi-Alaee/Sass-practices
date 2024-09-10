@@ -55,4 +55,18 @@ h4.conditioning {
   color: white;
 }
 
+.test, h4.inheritence {
+  color: white;
+  background-color: #000;
+  cursor: pointer;
+}
+.test:hover, h4.inheritence:hover {
+  padding: 10px;
+  background-color: red;
+}
+
+h4.inheritence:hover {
+  background-color: blueviolet;
+}
+
 /*# sourceMappingURL=app.css.map */

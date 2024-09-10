@@ -1,5 +1,5 @@
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
 h1 {
   background-color: $greenColor;
@@ -7,12 +7,12 @@ h1 {
 
 h2 {
   @include box(red, 1rem, $greenColor);
-  @include hoverEffect(rgb(243, 243, 62))
+  @include hoverEffect(rgb(243, 243, 62));
 }
 
 h3 {
   @include box(white, 2rem, black);
-  @include hoverEffect(rgb(0, 179, 255))
+  @include hoverEffect(rgb(0, 179, 255));
 }
 
 h4.operator-1 {
@@ -23,14 +23,32 @@ h4.operator-2 {
   font-size: 3rem + 2rem;
 }
 
-h4.content{
-  @include query(900px){
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+h4.content {
+  @include query(900px) {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     color: red;
   }
   font-size: 3rem;
 }
 
-h4.conditioning{
-  @include validation('mahdi 1385');
+h4.conditioning {
+  @include validation("mahdi 1385");
+}
+
+.test {
+  color: white;
+  background-color: #000;
+  cursor: pointer;
+  &:hover {
+    padding: 10px;
+    //! it doesn't work!
+    background-color: red;
+  }
+}
+
+h4.inheritence {
+  @extend .test;
+  &:hover {
+    background-color: blueviolet;
+  }
 }
