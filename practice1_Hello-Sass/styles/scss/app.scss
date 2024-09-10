@@ -30,3 +30,7 @@ h4.content{
   }
   font-size: 3rem;
 }
+
+h4.conditioning{
+  @include validation('mahdi 1385');
+}

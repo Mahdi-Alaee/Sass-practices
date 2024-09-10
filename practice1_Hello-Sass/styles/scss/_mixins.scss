@@ -1,23 +1,34 @@
 @mixin box($color, $radius, $bgColor) {
+  background-color: $bgColor;
+  border-radius: $radius;
+  color: $color;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+@mixin hoverEffect($bgColor) {
+  &:hover {
     background-color: $bgColor;
-    border-radius: $radius;
-    color: $color;
-    text-align: center;
-    font-size: 2rem;
-    padding: 1rem;
+    transition: background-color linear 150ms;
+    color: black;
+    cursor: pointer;
   }
+}
 
-  @mixin hoverEffect($bgColor){
-    &:hover{
-      background-color: $bgColor;
-      transition: background-color linear 150ms;
-      color: black;
-      cursor: pointer;
-    }
+@mixin query($width) {
+  @media (max-width: $width) {
+    @content;
   }
+}
 
-  @mixin query($width){
-    @media (max-width: $width) {
-      @content;
-    }
+@mixin validation($password) {
+  @if ($password == "mahdi 1385") {
+    background-color: green;
+    color: white;
+  } @else if($password == "mahdi") {
+    background-color: yellow;
+  } @else {
+    background-color: red;
   }
+}
