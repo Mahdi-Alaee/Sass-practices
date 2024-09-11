@@ -52,3 +52,12 @@ h4.inheritence {
     background-color: blueviolet;
   }
 }
+
+@for $item from 1 through 5{
+  .con-#{$item}{
+    background-color: royalblue;
+    color: #fff;
+    padding: 5px;
+    height: 20px * $item;
+  }
+}
