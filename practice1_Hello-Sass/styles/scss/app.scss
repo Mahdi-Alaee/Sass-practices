@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixins";
 
+
 h1 {
   background-color: $greenColor;
 }
@@ -24,11 +25,11 @@ h4.operator-2 {
 }
 
 h4.content {
+  font-size: 3rem;
   @include query(900px) {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     color: red;
   }
-  font-size: 3rem;
 }
 
 h4.conditioning {
@@ -53,11 +54,36 @@ h4.inheritence {
   }
 }
 
-@for $item from 1 through 5{
-  .con-#{$item}{
+//! for loop
+// @for $item from 1 through 5{
+//   .con-#{$item}{
+//     background-color: royalblue;
+//     color: #fff;
+//     padding: 5px;
+//     height: 20px * $item;
+//   }
+// }
+
+// $counter: 5;
+// $while ($counter > 0) {
+
+//   .con-#{$counter} {
+//     background-color: royalblue;
+//     color: #fff;
+//     padding: 5px;
+//     height: 20px * $counter;
+//   }
+
+//   $counter: $counter - 1;
+// }
+
+$item: 0;
+@while ($item < 6) {
+  .con-#{$item} {
     background-color: royalblue;
     color: #fff;
     padding: 5px;
     height: 20px * $item;
   }
+  $item: $item + 1;
 }
