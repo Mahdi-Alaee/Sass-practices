@@ -1,7 +1,6 @@
 @import "variables";
 @import "mixins";
 
-
 h1 {
   background-color: $greenColor;
 }
@@ -77,13 +76,19 @@ h4.inheritence {
 //   $counter: $counter - 1;
 // }
 
-$item: 0;
-@while ($item < 6) {
-  .con-#{$item} {
-    background-color: royalblue;
-    color: #fff;
-    padding: 5px;
-    height: 20px * $item;
+// $item: 0;
+// @while ($item < 6) {
+//   .con-#{$item} {
+//     background-color: royalblue;
+//     color: #fff;
+//     padding: 5px;
+//     height: 20px * $item;
+//   }
+//   $item: $item + 1;
+// }
+
+@each $element, $color in (con-1: red, con-2: green, con-3: blue) {
+  .#{$element} {
+    color: $color;
   }
-  $item: $item + 1;
 }

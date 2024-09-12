@@ -69,46 +69,16 @@ h4.inheritence:hover {
   background-color: blueviolet;
 }
 
-.con-0 {
-  background-color: royalblue;
-  color: #fff;
-  padding: 5px;
-  height: 0px;
-}
-
 .con-1 {
-  background-color: royalblue;
-  color: #fff;
-  padding: 5px;
-  height: 20px;
+  color: red;
 }
 
 .con-2 {
-  background-color: royalblue;
-  color: #fff;
-  padding: 5px;
-  height: 40px;
+  color: green;
 }
 
 .con-3 {
-  background-color: royalblue;
-  color: #fff;
-  padding: 5px;
-  height: 60px;
-}
-
-.con-4 {
-  background-color: royalblue;
-  color: #fff;
-  padding: 5px;
-  height: 80px;
-}
-
-.con-5 {
-  background-color: royalblue;
-  color: #fff;
-  padding: 5px;
-  height: 100px;
+  color: blue;
 }
 
 /*# sourceMappingURL=app.css.map */
