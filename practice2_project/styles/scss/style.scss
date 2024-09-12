@@ -1,0 +1,14 @@
+@import 'mixins';
+@import 'variables';
+
+html{
+    font-size: 10px;
+}
+
+*{
+    @include removeDefaults;
+}
+
+body{
+    font-size: 1.6rem;
+}
