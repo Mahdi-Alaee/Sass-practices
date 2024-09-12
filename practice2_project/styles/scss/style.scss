@@ -1,14 +1,51 @@
-@import 'mixins';
-@import 'variables';
+@import "mixins";
+@import "variables";
 
-html{
-    font-size: 10px;
+html {
+  font-size: 10px;
 }
 
-*{
-    @include removeDefaults;
+* {
+  @include removeDefaults();
 }
 
-body{
-    font-size: 1.6rem;
+body {
+  font-size: 1.6rem;
+}
+
+header {
+  background-color: $primaryColor;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 8rem;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+  .header-left__text {
+    @include textStyles(3rem, bold, white);
+  }
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  .header-right__icon {
+    width: 5rem;
+    border-radius: 100%;
+  }
+}
+.header-right-nav {
+  margin-right: 6rem;
+  display: flex;
+  gap: 0 2rem;
+  .header-right-nav__item {
+    text-decoration: none;
+    transition: all ease-in .12s;
+    &:hover{
+        color: $textColor;
+    }
+    @include textStyles(2rem, 100, white);
+  }
 }

@@ -13,4 +13,46 @@ body {
   font-size: 1.6rem;
 }
 
+header {
+  background-color: #654fef;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 8rem;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+.header-left .header-left__text {
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+.header-right .header-right__icon {
+  width: 5rem;
+  border-radius: 100%;
+}
+
+.header-right-nav {
+  margin-right: 6rem;
+  display: flex;
+  gap: 0 2rem;
+}
+.header-right-nav .header-right-nav__item {
+  text-decoration: none;
+  transition: all ease-in 0.12s;
+  color: white;
+  font-weight: 100;
+  font-size: 2rem;
+}
+.header-right-nav .header-right-nav__item:hover {
+  color: rgb(27, 27, 27);
+}
+
 /*# sourceMappingURL=style.css.map */
