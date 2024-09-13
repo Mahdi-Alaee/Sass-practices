@@ -21,8 +21,8 @@ header {
 }
 
 .header-left {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
   .header-left__text {
     @include textStyles(3rem, bold, white);
   }
@@ -36,16 +36,46 @@ header {
     border-radius: 100%;
   }
 }
+
 .header-right-nav {
   margin-right: 6rem;
   display: flex;
   gap: 0 2rem;
   .header-right-nav__item {
     text-decoration: none;
-    transition: all ease-in .12s;
-    &:hover{
-        color: $textColor;
+    transition: all ease-in 0.12s;
+    &:hover {
+      color: $textColor;
     }
     @include textStyles(2rem, 100, white);
+  }
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px 0;
+  cursor: pointer;
+  span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+  }
+}
+
+@include media(M) {
+  .header-right-nav {
+    display: none;
+  }
+
+  .header-right__icon {
+    display: none;
+  }
+}
+
+@include media(L) {
+  .hamburger-menu {
+    display: none;
   }
 }

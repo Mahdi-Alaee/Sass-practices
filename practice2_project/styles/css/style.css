@@ -55,4 +55,31 @@ header {
   color: rgb(27, 27, 27);
 }
 
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px 0;
+  cursor: pointer;
+}
+.hamburger-menu span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 728px) {
+  .header-right-nav {
+    display: none;
+  }
+  .header-right__icon {
+    display: none;
+  }
+}
+@media screen and (min-width: 728px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

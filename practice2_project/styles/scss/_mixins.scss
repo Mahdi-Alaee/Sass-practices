@@ -10,3 +10,15 @@
   font-weight: $weight;
   font-size: $size;
 }
+
+@mixin media($size) {
+  @if ($size == M) {
+    @media screen and (max-width: 728px) {
+      @content;
+    }
+  } @else if($size == L) {
+    @media screen and (min-width: 728px) {
+      @content;
+    }
+  }
+}
