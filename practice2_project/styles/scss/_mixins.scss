@@ -12,13 +12,23 @@
 }
 
 @mixin media($size) {
-  @if ($size == M) {
+  @if ($size == S) {
+    @media screen and (max-width: 520px) {
+      @content;
+    }
+  } @else if ($size == M) {
     @media screen and (max-width: 728px) {
       @content;
     }
   } @else if($size == L) {
-    @media screen and (min-width: 728px) {
+    @media screen and (max-width: 1200px) {
       @content;
     }
   }
+}
+
+@mixin boxShadow {
+  -webkit-box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.1);
+  -moz-box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.1);
 }
