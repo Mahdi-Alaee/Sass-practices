@@ -170,6 +170,35 @@ main .main-top-container {
   font-size: 1.4rem;
 }
 
+footer {
+  background-color: #654fef;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10rem;
+  padding: 4rem;
+}
+footer .footer__summary {
+  text-align: justify;
+  color: #fff;
+  font-weight: 100;
+  font-size: 2rem;
+}
+footer .footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .footer__link-item {
+  list-style: none;
+}
+footer .footer__link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
 @media screen and (max-width: 1200px) {
   main {
     padding-top: 4rem;
